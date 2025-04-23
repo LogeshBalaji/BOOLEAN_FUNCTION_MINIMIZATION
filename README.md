@@ -70,8 +70,10 @@ module logic_expression (
 endmodule
 ```
 **Logic symbol & Truthtable:**
-![316395754-a9ccb75e-db7b-490e-8b69-10f820e6bff4](https://github.com/user-attachments/assets/8e224c08-0571-4626-8746-75bfff7e66dd)
-![316395946-6835b6c0-9fe5-4f55-8288-53b7d0c42104](https://github.com/user-attachments/assets/4f838474-ad80-419a-a24d-40e50332dbb4)
+## F1
+![Screenshot 2025-04-23 210423](https://github.com/user-attachments/assets/efb82b4c-362e-4dd4-8d47-b114b3c7f30e)
+## F2
+![Screenshot 2025-04-23 210608](https://github.com/user-attachments/assets/7e3d7419-2d72-4b8c-b3ee-f07fe40fd4c3)
 
 **RTL realization**
 ## F1
