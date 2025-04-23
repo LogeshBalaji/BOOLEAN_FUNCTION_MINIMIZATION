@@ -29,6 +29,9 @@ Hardware – PCs, Cyclone II , USB flasher
 4.	Create nodes for inputs and outputs to generate the timing diagram.
 
 5.	For different input combinations generate the timing diagram.
+![WhatsApp Image 2025-04-23 at 8 46 02 PM](https://github.com/user-attachments/assets/8f5486e3-3cd7-4c7d-8c4d-77dfb2fc8a09)
+![WhatsApp Image 2025-04-23 at 8 46 03 PM](https://github.com/user-attachments/assets/9f5b3c02-3f17-4b03-8f53-757e65ba448a)
+![WhatsApp Image 2025-04-23 at 8 46 03 PM (1)](https://github.com/user-attachments/assets/edbbb4b2-8c7c-4dbf-9595-39c4a7637f6c)
 
 
 **Program:**
@@ -38,23 +41,32 @@ Program to implement the given logic function and to verify its operations in qu
 Developed by: Logesh B
 RegisterNumber:212224110034
 ```
+## F1
+```.py
+module logic_circuit (
+    input wire A,
+    input wire B,
+    input wire C,
+    input wire D,
+    output wire F1
+);
+
+    assign F1 = (~B & ~D) | (~A & B & D) | (A & B & ~C);
+
+endmodule
 ```
-module Boolean_min(A,B,C,D,W,X,Y,Z,F1,F2);
-input A,B,C,D,W,X,Y,Z;
-wire x1,x2,x3,x4,x5,x6,x7,x8,x9,x10;
-output F1,F2;
-assign x1=(~A)&(~B)&(~C)&(~D);
-assign x2=(A)&(~C)&(~D);
-assign x3=(~B)&(C)&(~D);
-assign x4=(~A)&(B)&(C)&(D);
-assign x5=(B)&(~C)&(D);
-assign x6=(X)&(~Y)&(Z);
-assign x7=(~X)&(~Y)&(Z);
-assign x8=(~W)&(X)&(Y);
-assign x9=(W)&(~X)&(Y);
-assign x10=(W)&(X)&(Y);
-assign F1=x1|x2|x3|x4|x5;
-assign F2=x6|x7|x8|x9|x10;
+## F2
+```.py
+module logic_expression (
+    input wire x,
+    input wire y,
+    input wire z,
+    input wire w,
+    output wire F
+);
+
+    assign F = (~y & z & ~w) | (x & z) | (y & x) | (w & z) | (w & y);
+
 endmodule
 ```
 **Logic symbol & Truthtable:**
@@ -62,10 +74,17 @@ endmodule
 ![316395946-6835b6c0-9fe5-4f55-8288-53b7d0c42104](https://github.com/user-attachments/assets/4f838474-ad80-419a-a24d-40e50332dbb4)
 
 **RTL realization**
-![Screenshot 2025-03-21 090400](https://github.com/user-attachments/assets/b9fa7393-8ba0-44ae-9d62-864e546d58ad)
+## F1
+![Screenshot 2025-04-23 203143](https://github.com/user-attachments/assets/fd1fb6bb-1a91-42ee-9af8-b7d89551eaf5)
+## F2
+![Screenshot 2025-04-23 204027](https://github.com/user-attachments/assets/9800d370-a3ab-44f6-81ca-ec4073b0b72c)
 
 **Output:**
-![Screenshot 2025-03-21 091551](https://github.com/user-attachments/assets/c11e2684-56b3-4868-9f2d-b9a59ed33480)
+## F1
+![Screenshot 2025-04-23 203623](https://github.com/user-attachments/assets/a7b139a1-8e09-47e5-ac50-4b9fe5bd8b9a)
+## F2
+![Screenshot 2025-04-23 204342](https://github.com/user-attachments/assets/dbaf2030-fce1-44ca-a7c6-05d5f23bdde1)
+
 
 **Result:**
 
